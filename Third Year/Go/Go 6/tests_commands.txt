@@ -1,0 +1,28 @@
+(base) [root@localhost A6]# vim setup_and_benchmark.sh
+(base) [root@localhost A6]# ls -l
+total 32
+-rw-r--r--. 1 root root  251 Mar  1 10:36 calculator.go
+-rw-r--r--. 1 root root  636 Mar  1 08:59 cal.go
+-rw-r--r--. 1 root root   74 Feb  4 08:39 FindArea.go
+-rw-r--r--. 1 root root  398 Mar  1 11:58 integers.go
+-rw-r--r--. 1 root root  374 Mar  1 10:39 rectangle.go
+-rw-r--r--. 1 root root 1002 Mar  1 12:07 setup_and_benchmark.sh
+-rwxr-xr-x. 1 root root 1446 Mar  1 12:02 setup_and_test.sh
+-rw-r--r--. 1 root root  585 Mar  1 10:30 studentStruct.go
+drwxr-xr-x. 2 root root   63 Mar  1 12:02 subtract-example
+(base) [root@localhost A6]# chmod +x setup_and_benchmark.sh
+(base) [root@localhost A6]# ./setup_and_benchmark.sh
+go: creating new go.mod: module square-benchmark
+Running the Go program...
+Square of 5: 25
+Running the benchmark...
+goos: linux
+goarch: amd64
+pkg: square-benchmark
+cpu: 12th Gen Intel(R) Core(TM) i5-12500
+BenchmarkSquare
+BenchmarkSquare-12    	1000000000	         0.1200 ns/op
+PASS
+ok  	square-benchmark	0.136s
+(base) [root@localhost A6]# 
+
