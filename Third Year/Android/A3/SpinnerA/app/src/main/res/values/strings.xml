@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SpinnerA</string>
+    <string name="dropdown_menu_to_select_an_item">dropdown menu to select an item</string>
+    <string-array name="spinner_items">
+        <item>Espresso</item>
+        <item>Cappuccino</item>
+        <item>Latte</item>
+        <item>Mocha</item>
+        <item>Macchiato</item>
+        <item>Americano</item>
+    </string-array>
+</resources>
