@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextEmpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Name" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone" />
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salary" />
+
+    <EditText
+        android:id="@+id/editTextDeptNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department Number" />
+
+    <Button
+        android:id="@+id/buttonAddEmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Employee" />
+
+    <EditText
+        android:id="@+id/editTextDeptName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department Name" />
+
+    <EditText
+        android:id="@+id/editTextDeptLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department Location" />
+
+    <Button
+        android:id="@+id/buttonAddDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Department" />
+
+    <EditText
+        android:id="@+id/editTextDeleteDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department Name to Delete" />
+
+    <Button
+        android:id="@+id/buttonDeleteEmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Employees" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+</LinearLayout>
