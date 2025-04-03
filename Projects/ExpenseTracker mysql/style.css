@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.regDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcomeTag {
+    width: 30rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 10rem;
+
+  }
+
+  .dis1 {
+    background-color: #F4DB7D;
+    height: 8rem;
+    color: #000;
+    border-radius: 4rem 1rem;
+    margin-top: 5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+  }
+
+  .dis2 {
+    background-color: #1A2238;
+    height: 60rem;
+    color: #fff;
+    font-size: 3rem;
+    border-radius: 4rem 1rem;
+    border: groove 1em red;
+    margin-top: 5rem;
+    overflow: auto;
+    scrollbar-color: #c81a2627 #c81ab927;
+  }
+
+  .dis2 hr{
+    background-color: red;
+    padding: 0.5rem;
+  }
+  .record {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .record div{
+    width: 22rem;
+  }
+  .rNav div{
+    color:#a7c5b7;
+  }
+
+  .record a {
+    text-decoration: none;
+    color: #FF6A3D;
+    font-size: 2.5rem;
+  }
+
+  .range {
+
+    background-color: #333;
+    width: 30rem;
+    height: 3rem;
+    transform: skew(30deg);
+    font-family: 'Orbitron', monospace;
+
+    &:before {
+      --width: calc(var(--p) * 1%);
+
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #F3E600;
+      z-index: 0;
+      animation: load .5s forwards linear, glitch 2s infinite linear;
+    }
+
+    &:after {
+      counter-reset: progress var(--p);
+      content: counter(progress) '%';
+      color: #000;
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      transform: translateY(-50%) skewX(-30deg);
+      z-index: 1;
+    }
+
+
+  }
+
+  @keyframes load {
+    to {
+      width: var(--width);
+    }
+  }
+
+  .dm {
+    display: flex;
+    justify-content: space-between;
+  }

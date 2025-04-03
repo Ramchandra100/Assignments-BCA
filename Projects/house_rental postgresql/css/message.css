@@ -1,0 +1,153 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navbar ul li a.active {
+    background-color: #0056b3;
+}
+
+
+.message-container {
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+    
+}
+
+.message-container h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+
+
+.message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+    margin-bottom: 15px;
+}
+
+
+.sent {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.received {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+.sent span, .received span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .message-container {
+        width: 90%;
+    }
+}
